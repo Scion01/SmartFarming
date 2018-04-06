@@ -13,6 +13,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -68,6 +71,10 @@ public class NewentryActivity extends AppCompatActivity implements AdapterView.O
                         progressDialog.dismiss();
                     }
                 }, 2000);
+
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = databaseReference.child("activeProjects");
+
     }
 
     public boolean validate() {
