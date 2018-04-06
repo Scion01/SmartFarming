@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.hauntarl.smartfarming.EntryActivity"
     tools:showIn="@layout/activity_entry">
@@ -30,14 +30,6 @@
         android:layout_height="1dp"
         android:background="#a5a5a6"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="#6c6c6c"
-        android:text="remove this textView"/>
     </LinearLayout>
 
 </ScrollView>

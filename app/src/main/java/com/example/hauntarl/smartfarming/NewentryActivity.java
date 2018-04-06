@@ -76,6 +76,7 @@ public class NewentryActivity extends AppCompatActivity implements AdapterView.O
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
         databaseReference = databaseReference.child("activeProjects");
+        databaseReference=databaseReference.child("7972247921");
         databaseReference=databaseReference.child(new Date().toString());
         newCropProject newCropProject = new newCropProject(_cropText.getText().toString(),_expiryText.getText().toString(),monthSelected);
         databaseReference.setValue(newCropProject);
