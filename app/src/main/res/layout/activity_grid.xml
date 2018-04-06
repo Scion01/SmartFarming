@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hauntarl.smartfarming.GridActivity">
+    <ImageView
+        android:id="@+id/imageViewForGrid"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/crop" />
+
+    <TextView
+        android:id="@+id/textViewForGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:text="Default Text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#606060"/>
+</LinearLayout>

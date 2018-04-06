@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Smart Farming</string>
+    <string name="crop">Your Crops</string>
+    <string name="active">Active Sessions</string>
+    <string name="plan">My Plan</string>
+    <string name="redeem">Redeem</string>
+    <string name="chat">Ask a Query</string>
+    <string name="request_call">Request a Call</string>
+    <string name="share">Share the app!</string>
+    <string name="about">About Us</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_desc">Start by Signing in!</string>
+
+    <string name="slide_2_desc">Select a Plan that Favours you…</string>
+
+    <string name="slide_3_desc">24/7 Reliable Service!</string>
+    <string name="no_account_yet_create_one">No account yet? Create one</string>
+    <string name="login">Login</string>
+    <string name="title_activity_entry">EntryActivity</string>
+    <string name="title_activity_query">QueryActivity</string>
+
+</resources>
