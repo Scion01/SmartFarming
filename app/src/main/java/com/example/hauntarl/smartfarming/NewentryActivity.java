@@ -74,7 +74,8 @@ public class NewentryActivity extends AppCompatActivity implements AdapterView.O
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
         databaseReference = databaseReference.child("activeProjects");
-
+        newCropProject newCropProject = new newCropProject(_cropText.getText().toString(),_expiryText.getText().toString(),monthSelected);
+        databaseReference.setValue(newCropProject);
     }
 
     public boolean validate() {
@@ -96,6 +97,10 @@ public class NewentryActivity extends AppCompatActivity implements AdapterView.O
         } else {
             _expiryText.setError(null);
         }
+        if(monthSelected == "<month") {
+            Snackbar.make(_doneButton, "Pls select proper month!", Snackbar.LENGTH_LONG).show();
+            valid = false;
+        }
 
         return valid;
     }
@@ -114,8 +119,7 @@ public class NewentryActivity extends AppCompatActivity implements AdapterView.O
     }
     @Override
     public void onClick(View view) {
-        if(monthSelected == "<month")
-            Snackbar.make(_doneButton, "Pls select proper month!", Snackbar.LENGTH_LONG).show();
+
 
     }
 
