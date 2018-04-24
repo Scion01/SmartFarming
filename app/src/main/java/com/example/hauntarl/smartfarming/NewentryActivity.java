@@ -101,7 +101,7 @@ public class NewentryActivity extends AppCompatActivity implements AdapterView.O
         } else {
             _expiryText.setError(null);
         }
-        if(monthSelected == "<month") {
+        if(monthSelected == "<month>") {
             Snackbar.make(_doneButton, "Pls select proper month!", Snackbar.LENGTH_LONG).show();
             valid = false;
         }
@@ -117,7 +117,7 @@ public class NewentryActivity extends AppCompatActivity implements AdapterView.O
     }
 
     public void failed() {
-        Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "Entry failed", Toast.LENGTH_LONG).show();
 
         _doneButton.setEnabled(true);
     }

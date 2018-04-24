@@ -54,7 +54,7 @@ public class EntryActivity extends AppCompatActivity {
                     }
                     entryList.add(finalString);
                     arrayAdapter.notifyDataSetChanged();
-                    findViewById(R.id.removeText).setVisibility(View.GONE);
+                    //findViewById(R.id.removeText).setVisibility(View.GONE);
                     listView.setVisibility(View.VISIBLE);
 
                 }

@@ -36,7 +36,8 @@
             android:gravity="center"
             android:textSize="20sp"
             android:textColor="#6c6c6c"
-            android:text="remove this textView"/>
+            android:text="remove this textView"
+            android:id="@+id/removeView"/>
     </LinearLayout>
 
 </ScrollView>

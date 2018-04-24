@@ -2,14 +2,17 @@ package com.example.hauntarl.smartfarming;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Date;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,6 +59,11 @@ public class NewQueryActivity extends AppCompatActivity {
                         progressDialog.dismiss();
                     }
                 }, 2000);
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = databaseReference.child("queries");
+        databaseReference=databaseReference.child("7972247921"+new Date());
+        AddingNewQuery addingNewQuery = new AddingNewQuery(_descText.getText().toString(),_subText.getText().toString(),"noImagesYet",Double.toString(0),"None");
+        databaseReference.setValue(addingNewQuery);
     }
 
     public boolean validate() {
@@ -89,7 +97,7 @@ public class NewQueryActivity extends AppCompatActivity {
     }
 
     public void failed() {
-        Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "Please check the fields entered!", Toast.LENGTH_LONG).show();
 
         _doneButton.setEnabled(true);
     }
