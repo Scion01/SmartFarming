@@ -26,10 +26,11 @@ import butterknife.ButterKnife;
 
 public class SignupActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener{
     private static final String TAG = "SignupActivity";
-    private Spinner areaUnitSpinner1, areaUnitSpinner2;
+    private Spinner areaUnitSpinner1, areaUnitSpinner2, areaUnitSpinner3;
     String[] areaUnits = new String[]  {"None","Acre","Bigha","Biswa","Guntha","Hectare","Sq-m","Sq-km"};
+    String[] district = new String[]  {"None","Ahmednagar","Akola","Amravati","Aurangabaad","Beed","Bhandara","Buldhana","Chandrapur","Dhule","Gadchiroli","Gondia","Hingoli","Jadgaon","Jalna","Kolhapur","Latur","Mumbai City","Mumbai Suburban","Nagpur","Nanded","Nandurbar","Nashik","Osmanabad","Parbhani","Pune","Raigad","Ratnagiri","Sangli","Satara","Sindhudurg","Solapur","Thane","Wardha","Washim","Yatavmal","Palghar"};
 
-    String areaUnitSelected1, areaUnitSelected2;
+    String areaUnitSelected1, areaUnitSelected2, getAreaUnitSelected3;
     @BindView(R.id.input_name) EditText _nameText;
     @BindView(R.id.input_phone) EditText _phoneText;
     @BindView(R.id.input_email) EditText _emailText;
@@ -50,8 +51,12 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
         ButterKnife.bind(this);
         areaUnitSpinner1 = (Spinner) findViewById(R.id.areaSpinner1);
         areaUnitSpinner2 = (Spinner) findViewById(R.id.areaSpinner2);
+        areaUnitSpinner3 = (Spinner) findViewById(R.id.areaSpinner3);
+
         areaUnitSpinner1.setOnItemSelectedListener(this);
         areaUnitSpinner2.setOnItemSelectedListener(this);
+        areaUnitSpinner3.setOnItemSelectedListener(this);
+
 
         ArrayAdapter aa4 = new ArrayAdapter(this,android.R.layout.simple_spinner_item,areaUnits);
         aa4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -59,6 +64,9 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
         ArrayAdapter aa5 = new ArrayAdapter(this,android.R.layout.simple_spinner_item,areaUnits);
         aa5.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         areaUnitSpinner2.setAdapter(aa5);
+        ArrayAdapter aa6 = new ArrayAdapter(this,android.R.layout.simple_spinner_item,district);
+        aa5.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        areaUnitSpinner2.setAdapter(aa6);
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
         databaseReference2 = FirebaseDatabase.getInstance().getReference();
@@ -129,6 +137,7 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
     public void onSignupSuccess() {
         _signupButton.setEnabled(true);
         setResult(RESULT_OK, null);
+        new EulaClass(this).show();
         startActivity(new Intent(getApplicationContext(), DashActivity.class));
         finish();
     }
@@ -227,6 +236,8 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
             areaUnitSelected1 = areaUnits[position];
         if(parent ==areaUnitSpinner2)
             areaUnitSelected2 = areaUnits[position];
+        if(parent == areaUnitSpinner3)
+            getAreaUnitSelected3 = district[position];
     }
 
     @Override

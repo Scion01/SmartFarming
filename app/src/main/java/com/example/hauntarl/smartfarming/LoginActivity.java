@@ -2,6 +2,7 @@ package com.example.hauntarl.smartfarming;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -18,8 +19,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import butterknife.ButterKnife;
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
@@ -32,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.input_password) EditText _passwordText;
     @BindView(R.id.btn_login) Button _loginButton;
     @BindView(R.id.link_signup) TextView _signupLink;
+    @BindView(R.id.link_forgotPassword) TextView _forgotLink;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,6 +63,14 @@ public class LoginActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_SIGNUP);
             }
         });
+
+        _forgotLink.setOnClickListener(new View.OnClickListener() {
+                                           @Override
+                                           public void onClick(View view) {
+                                               // forgot password logic here!
+                                           }
+                                       }
+        );
     }
 
     public void login() {
@@ -94,6 +104,11 @@ public class LoginActivity extends AppCompatActivity {
                             {
                                 Log.i("passwords", singleSnapshot.getValue().toString());
                                 Toast.makeText(getApplicationContext(), "Verified!!", Toast.LENGTH_SHORT).show();
+                                SharedPreferences sharedPref= getSharedPreferences("mypref", 0);
+                                SharedPreferences.Editor editor= sharedPref.edit();
+                                editor.putInt("logged", 1);
+                                editor.putString("phone", _phoneText.toString());
+                                editor.commit();
                                 flag = 1;
 
                             }

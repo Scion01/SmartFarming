@@ -118,6 +118,29 @@
             </LinearLayout>
         </android.support.design.widget.TextInputLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="170dp"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_domain_black_24dp"
+                    android:text="   District" />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/areaSpinner3"
+                    android:layout_marginLeft="10dp"
+                    android:spinnerMode="dialog">
+                </Spinner>
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+
         <!-- Password Label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"

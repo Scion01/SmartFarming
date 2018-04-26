@@ -62,7 +62,7 @@ public class NewQueryActivity extends AppCompatActivity {
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
         databaseReference = databaseReference.child("queries");
         databaseReference=databaseReference.child("7972247921"+new Date());
-        AddingNewQuery addingNewQuery = new AddingNewQuery(_descText.getText().toString(),_subText.getText().toString(),"noImagesYet",Double.toString(0),"None");
+        AddingNewQuery addingNewQuery = new AddingNewQuery(_descText.getText().toString(),_subText.getText().toString(),"noImagesYet",0,"Please wait while we process your request.");
         databaseReference.setValue(addingNewQuery);
     }
 

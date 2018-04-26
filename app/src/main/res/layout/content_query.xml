@@ -37,6 +37,7 @@
             android:textSize="20sp"
             android:textColor="#6c6c6c"
             android:text="remove this textView"
+            android:visibility="gone"
             android:id="@+id/removeView"/>
     </LinearLayout>
 

@@ -23,4 +23,6 @@
     <string name="title_activity_entry">EntryActivity</string>
     <string name="title_activity_query">QueryActivity</string>
 
+    <string name="iAgree">I Agree</string>
+    <string name="eulaString">Terms and Conditions...</string>
 </resources>

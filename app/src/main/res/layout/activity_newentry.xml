@@ -10,7 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
         android:orientation="vertical">
 
         <LinearLayout
@@ -39,6 +38,95 @@
                 android:drawableLeft="@drawable/ic_person_red"
                 android:hint="   Crop"
                 android:textColorHint="#636363"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <EditText android:id="@+id/input_landArea"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:drawableLeft="@drawable/ic_crop_black_24dp"
+                android:hint="   Land Area"
+                android:textColorHint="#636363"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <EditText android:id="@+id/input_soilType"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:drawableLeft="@drawable/ic_landscape_black_24dp"
+                android:hint="   Soil Type"
+                android:textColorHint="#636363"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="165dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_pool_black_24dp"
+                    android:textSize="20sp"
+                    android:text="   Water Source"/>
+                <Spinner
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/waterSpinner"
+                    android:spinnerMode="dialog">
+                </Spinner>
+
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText android:id="@+id/input_start"
+                    android:layout_width="165dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:drawableLeft="@drawable/ic_add_black_24dp"
+                    android:hint="Start Year     " />
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monthSpinner1"
+                    android:spinnerMode="dialog">
+                </Spinner>
+                <Spinner
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/daySpinner"
+                    android:spinnerMode="dialog">
+                </Spinner>
+            </LinearLayout>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout

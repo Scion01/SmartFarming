@@ -32,10 +32,11 @@
         <activity
             android:name=".NewentryActivity"
             android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".QueryActivity" />
         <activity
-            android:name=".QueryActivity" />
-        <activity android:name=".NewQueryActivity"
-            android:windowSoftInputMode="stateHidden|adjustPan"/>
+            android:name=".NewQueryActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".solutionAcitivty"></activity>
     </application>
 
 </manifest>

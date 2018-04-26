@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -21,6 +22,7 @@ public class QueryActivity extends AppCompatActivity {
     private ListView listView;
     private DatabaseReference databaseReference;
     String finalString;
+    private Integer check=0;
 
     ArrayList<String> entryList = new ArrayList<String>();
 
@@ -94,6 +96,17 @@ public class QueryActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), NewQueryActivity.class));
                 overridePendingTransition(R.anim.entry_from_left,R.anim.exit_from_left);
                 finish();
+            }
+        });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Intent intent = new Intent(getApplicationContext(), solutionAcitivty.class);
+                    intent.putExtra("position", position);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.entry_from_left, R.anim.exit_from_left);
+
             }
         });
     }

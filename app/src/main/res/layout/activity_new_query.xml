@@ -57,7 +57,6 @@
                     android:drawableLeft="@drawable/ic_do_not_disturb_black_24dp"
                     android:hint="   Description" />
 
-
             </LinearLayout>
         </android.support.design.widget.TextInputLayout>
 
