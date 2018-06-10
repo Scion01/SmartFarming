@@ -1,0 +1,150 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.hauntarl.smartfarming.MyAccount">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="7dp"
+                android:text="My Account"
+                android:textSize="25sp"
+                android:textColor="#333333"
+                android:paddingTop="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_power"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:layout_marginBottom="10dp"
+                android:text=" Logout"
+                android:textSize="15dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/logout"
+                android:background="@drawable/highlight_button3"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_person_outline"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:text="Phone Number"
+            android:paddingLeft="25dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginRight="100dp"
+    android:layout_marginTop="20dp"
+    android:background="#9c9c9c"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:text="Change Password"
+            android:textSize="25sp"
+            android:textColor="#565656"
+            android:layout_marginBottom="20dp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/curp"
+                android:drawablePadding="15dp"
+                android:inputType="textPassword"
+                android:hint="Current Password"
+                android:drawableLeft="@drawable/ic_security"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newp"
+                android:drawablePadding="15dp"
+                android:inputType="textPassword"
+                android:hint="New Password"
+                android:drawableLeft="@drawable/ic_new"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/conp"
+                android:drawablePadding="15dp"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:drawableLeft="@drawable/ic_check_black_24dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/done"
+                android:text="Done"
+                android:textSize="15dp"
+                android:textColor="@color/personal"
+                android:background="@drawable/highlight_button1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

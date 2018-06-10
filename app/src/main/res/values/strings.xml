@@ -1,13 +1,22 @@
 <resources>
-    <string name="app_name">Smart Farming</string>
+    <string name="app_name">genX Farming</string>
     <string name="crop">Your Crops</string>
     <string name="active">Active Sessions</string>
     <string name="plan">My Plan</string>
+    <string name="account">My Account</string>
     <string name="redeem">Redeem</string>
-    <string name="chat">Ask a Query</string>
+    <string name="chat">My Queries</string>
     <string name="request_call">Request a Call</string>
     <string name="share">Share the app!</string>
     <string name="about">About Us</string>
+
+
+    <string name="desc_chat">Let our experts know about your concerns and avail you with a solution</string>
+    <string name="desc_call">Get in verbal contact with our experts</string>
+    <string name="desc_plan">See validity of your currently opted plan or redeem/apply a new plan</string>
+    <string name="desc_acc">Make changes to your existing credentials or logout</string>
+    <string name="desc_about">Get to know us better</string>
+
 
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>
@@ -24,5 +33,5 @@
     <string name="title_activity_query">QueryActivity</string>
 
     <string name="iAgree">I Agree</string>
-    <string name="eulaString">Terms and Conditions...</string>
+    <string name="eulaString">Terms of Use</string>
 </resources>

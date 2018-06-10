@@ -35,8 +35,10 @@
                 android:layout_marginRight="40dp"
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords"
-                android:drawableLeft="@drawable/ic_person_red"
-                android:hint="   Subject"
+                android:drawableLeft="@drawable/ic_lightbulb_outline_black_24dp"
+                android:drawablePadding="15dp"
+
+                android:hint="Subject"
                 android:textColorHint="#636363"/>
         </android.support.design.widget.TextInputLayout>
 
@@ -54,12 +56,60 @@
                     android:layout_marginRight="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
-                    android:drawableLeft="@drawable/ic_do_not_disturb_black_24dp"
-                    android:hint="   Description" />
+                    android:drawableLeft="@drawable/ic_textsms_black_24dp"
+                    android:hint="Description"
+                    android:drawablePadding="15dp"
+                    />
 
             </LinearLayout>
         </android.support.design.widget.TextInputLayout>
 
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageToBeUploaded"
+            android:layout_marginLeft="40dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_style1"
+            android:text="Camera"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:textColor="@color/personal"/>
+            <ImageButton
+                android:id="@+id/btn_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/highlight_button1"
+                android:text="Pick An Image"
+                android:src="@drawable/ic_image_black_24dp"
+                android:layout_weight="1"
+                android:textColor="@color/personal"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_cancel_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/highlight_button1"
+            android:text="Remove this image"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:textColor="@color/personal"/>
         <Button
             android:id="@+id/btn_done"
             android:layout_width="match_parent"
@@ -67,7 +117,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
-            android:background="@drawable/button_style1"
+            android:background="@drawable/highlight_button1"
             android:text="Submit"
             android:textSize="15sp"
             android:textColor="@color/personal"/>

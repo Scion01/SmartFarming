@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splashbg"
+    android:background="#ffffff"
     tools:context="com.example.hauntarl.smartfarming.DashActivity">
     <TextView
         android:layout_width="match_parent"
@@ -26,9 +26,8 @@
     <GridView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="2"
+        android:numColumns="1"
         android:id="@+id/gridView1"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hauntarl.smartfarming.Consultant_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/shivaji"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#393939"
+                android:id="@+id/name"
+                android:text="SHIVAJI B. NAWALE,\nB.Sc. (Agri),\nIVORY ESTATE BANER ROAD PUNE PIN 411008"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/personal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Get in Touch:"
+            android:textColor="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_touch"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            android:text="Email - shivajinavale9@gmail.com"/>
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/personal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   About Me:"
+            android:textColor="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_person_outline"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            android:text="More than 30 years of extensive experience in the field of marketing and sales in agriculture industry. Marketing, sales development and create the brands of agriculture inputs."/>
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/personal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Education:"
+            android:textColor="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_library_books_black_24dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            android:text="B.Sc.(Agri) from M.P.K.V. Rahuri (Pune College)"/>
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/personal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Experience:"
+            android:textColor="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_work_black_24dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="SYNGENTA INDIA LTD : June 1980 to March 2011 "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:text="1. Sales Executive (Khandesi and Buldhana of Maharashtra),\n2. Area Sales Manager (Marathwada, Vidharba and South Maharashtra),\n3. Regional Sales Manager (Maharashtra, Gujrat, Karnataka and Goa)."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="SSK : April 2011 to March 2015 (Five years) Founder of Shetkari Seva Kendra\nDesignation - Vice President (Subject Matter Expert)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:text="A business enterprise for selling Agri Inputs to farmers. Consulting farmers for smart farming for getting  more yield, more profit Desta Globle and Cash-PE (On Line selling Co.) From April 2015 to On date."
+            />
+
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/personal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Profile:"
+            android:textColor="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_account_box_black_24dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Market development, selling through Website, SMS and Whatsapp Development of e-commerce business for Agri inputs.\nAdvice to farmer for SMART FARMING Crop cultivation, Plant protection, Harvesting and Marketing of end products."/>
+
+    </LinearLayout>
+</ScrollView>

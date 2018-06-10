@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.hauntarl.smartfarming">
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -9,7 +28,8 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait">
@@ -19,6 +39,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
         <activity android:name=".IntroActivity" />
         <activity android:name=".MainActivity" />
         <activity
@@ -36,7 +65,26 @@
         <activity
             android:name=".NewQueryActivity"
             android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity android:name=".solutionAcitivty"></activity>
+        <activity android:name=".solutionAcitivty" />
+        <activity android:name=".Accounting" />
+        <activity
+            android:name=".RequestCall"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".MyAccount"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".MyPlan" />
+        <activity
+            android:name=".NotSatisfiedCallRequest"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Consultant_1" />
+        <activity android:name=".gateway" />
+        <activity android:name=".checkInternet" />
+        <activity android:name=".WebViewForRef" />
+        <activity android:name=".Recommendations" />
+        <activity android:name=".ProductQuery"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
     </application>
 
 </manifest>

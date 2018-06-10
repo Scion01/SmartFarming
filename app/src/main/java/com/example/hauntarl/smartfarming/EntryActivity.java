@@ -92,6 +92,16 @@ public class EntryActivity extends AppCompatActivity {
                 finish();
             }
         });
+        /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getApplicationContext(), Accounting.class);
+                intent.putExtra("position", position);
+                startActivity(intent);
+                overridePendingTransition(R.anim.entry_from_left, R.anim.exit_from_left);
+
+            }
+        });*/
 
 
     }

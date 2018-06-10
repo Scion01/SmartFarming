@@ -37,8 +37,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords"
+                android:drawablePadding="15dp"
+
                 android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
-                android:hint="   Name" />
+                android:hint="Name" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -49,9 +51,11 @@
             <EditText android:id="@+id/input_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawablePadding="15dp"
+
                 android:inputType="phone"
                 android:drawableLeft="@drawable/ic_call_black_24dp"
-                android:hint="   Phone Number"
+                android:hint="Phone Number"
                 android:lines="1"
                 android:maxLength="14"/>
         </android.support.design.widget.TextInputLayout>
@@ -66,8 +70,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
+                android:drawablePadding="15dp"
+
                 android:drawableLeft="@drawable/ic_email_black_24dp"
-                android:hint="   Email" />
+                android:hint="Email" />
         </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -82,10 +88,12 @@
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
+                    android:drawablePadding="15dp"
+
                     android:drawableLeft="@drawable/ic_crop_din_black_24dp"
-                    android:hint="   Total Land" />
+                    android:hint="Total Land" />
                 <Spinner
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/areaSpinner1"
                     android:layout_marginLeft="10dp"
@@ -106,10 +114,11 @@
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
+                    android:drawablePadding="15dp"
                     android:drawableLeft="@drawable/ic_crop_black_24dp"
-                    android:hint="   Cultivated Land" />
+                    android:hint="Cultivated Land" />
                 <Spinner
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/areaSpinner2"
                     android:layout_marginLeft="10dp"
@@ -125,17 +134,20 @@
             android:layout_marginBottom="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
                 <TextView android:layout_width="170dp"
                     android:textSize="20sp"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_domain_black_24dp"
-                    android:text="   District" />
+                    android:drawablePadding="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="District" />
                 <Spinner
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/areaSpinner3"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="5dp"
                     android:spinnerMode="dialog">
                 </Spinner>
             </LinearLayout>
@@ -151,7 +163,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="   New Password"
+                android:drawablePadding="15dp"
+
+                android:hint="New Password"
                 android:drawableLeft="@drawable/ic_new_releases_black_24dp" />
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
@@ -163,7 +177,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="   Confirm Password"
+                android:drawablePadding="15dp"
+                android:hint="Confirm Password"
                 android:drawableLeft="@drawable/ic_security_black_24dp" />
         </android.support.design.widget.TextInputLayout>
 
@@ -177,7 +192,7 @@
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:padding="12dp"
-            android:background="@drawable/button_style1"
+            android:background="@drawable/highlight_button1"
             android:textSize="15sp"
             android:textColor="@color/personal"
             android:text="Create Account"/>

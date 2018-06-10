@@ -2,6 +2,7 @@ package com.example.hauntarl.smartfarming;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -96,7 +97,9 @@ public class NewentryActivity extends AppCompatActivity implements AdapterView.O
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
         databaseReference = databaseReference.child("activeProjects");
-        databaseReference=databaseReference.child("7972247921");
+        SharedPreferences sharedPref= getSharedPreferences("mypref", 0);
+        String phone=sharedPref.getString("phone","");
+        databaseReference=databaseReference.child(phone);
         databaseReference=databaseReference.child(new Date().toString());
         newCropProject newCropProject = new newCropProject(_cropText.getText().toString(),_expiryText.getText().toString(),monthSelected);
         databaseReference.setValue(newCropProject);

@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:background="@null"
+        android:background="@drawable/highlight_button3"
         android:text="@string/next"
         android:textColor="@color/colorAccent" />
 
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:background="@null"
+        android:background="@drawable/highlight_button3"
         android:text="@string/skip"
         android:textColor="@color/colorAccent" />
 </RelativeLayout>

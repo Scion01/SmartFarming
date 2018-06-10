@@ -1,16 +1,25 @@
 package com.example.hauntarl.smartfarming;
 
 public class newUser {
-    String Name, Phone, Email, TotLand, TotLandUnit, CultLand, CultLandUnit, pass;
+    public String Name;
+    public String Phone;
+    public String Email;
+    public String TotLand;
+    public String TotLandUnit;
+    public String CultLand;
+    public String CultLandUnit;
+    public String pass;
+    public String district;
 
-    public newUser(String name, String phone, String email, String totLand, String totLandUnit, String cultLand, String cultLandUnit, String pass) {
-        Name = name;
-        Phone = phone;
-        Email = email;
-        TotLand = totLand;
-        TotLandUnit = totLandUnit;
-        CultLand = cultLand;
-        CultLandUnit = cultLandUnit;
+    public newUser(String name, String phone, String email, String totLand, String totLandUnit, String cultLand, String cultLandUnit, String pass, String district) {
+        this.Name = name;
+        this.Phone = phone;
+        this.Email = email;
+        this.TotLand = totLand;
+        this.TotLandUnit = totLandUnit;
+        this.CultLand = cultLand;
+        this.CultLandUnit = cultLandUnit;
         this.pass = pass;
+        this.district=district;
     }
 }

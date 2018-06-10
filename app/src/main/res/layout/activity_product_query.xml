@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hauntarl.smartfarming.NewQueryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/product"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_subject"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:drawableLeft="@drawable/ic_lightbulb_outline_black_24dp"
+                android:hint="Subject"
+                android:textColor="#848484"
+                android:drawablePadding="15dp"
+                android:textColorHint="#636363"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:inputType="textMultiLine"
+                    android:drawableLeft="@drawable/ic_looks_black_24dp"
+                    android:hint="What are you looking for?" />
+
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText android:id="@+id/input_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:inputType="textMultiLine"
+                    android:drawableLeft="@drawable/ic_queue_black_24dp"
+                    android:hint="How much do you need?" />
+
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView android:layout_width="140dp"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_attach_money_black_24dp"
+                    android:drawablePadding="15dp"
+                    android:text="Budget" />
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BudgetSpinner"
+                    android:spinnerMode="dialog">
+                </Spinner>
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:text="Urgency:"/>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/urgency"
+            android:layout_marginLeft="5dp"
+            android:numStars="5"
+            android:rating="0"
+            android:layout_marginTop="20dp"/>
+        </LinearLayout>
+            <Button
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+                android:layout_marginBottom="20sp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/highlight_button1"
+            android:text="Submit"
+            android:textSize="15sp"
+            android:textColor="@color/personal"/>
+
+    </LinearLayout>
+
+</ScrollView>

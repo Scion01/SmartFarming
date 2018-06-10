@@ -10,6 +10,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    useLibrary 'org.apache.http.legacy'
     buildTypes {
         release {
             minifyEnabled false
@@ -26,6 +27,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.github.aakira:expandable-layout:1.4.2@aar'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     compile 'com.android.support:design:26.1.0'
     compile 'com.google.firebase:firebase-core:12.0.0'
@@ -34,5 +36,6 @@ dependencies {
     compile 'com.google.firebase:firebase-storage:12.0.0'
     compile 'com.google.android.gms:play-services-auth:12.0.0'
     implementation files('libs/PhotoUtil.jar')
+    compile 'com.github.f0ris.sweetalert:library:1.5.1'
 }
 apply plugin: 'com.google.gms.google-services'

@@ -40,7 +40,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:drawableLeft="@drawable/ic_call_black_24dp"
-                android:hint="   Phone Number"
+                android:hint="Phone Number"
+                android:drawablePadding="15dp"
                 android:lines="1"
                 android:maxLength="14"/>
         </android.support.design.widget.TextInputLayout>
@@ -55,6 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
+                android:drawablePadding="15dp"
                 android:hint="   Password"
                 android:drawableLeft="@drawable/ic_security_black_24dp" />
         </android.support.design.widget.TextInputLayout>
@@ -70,7 +72,7 @@
             android:padding="12dp"
             android:textColor="@color/personal"
             android:textSize="15sp"
-            android:background="@drawable/button_style1"
+            android:background="@drawable/highlight_button1"
             android:text="@string/login"/>
 
         <TextView android:id="@+id/link_forgotPassword"
@@ -80,6 +82,7 @@
             android:textColor="@color/colorAccent"
             android:text="Forgot Password?"
             android:gravity="center"
+            android:layout_marginTop="10dp"
             android:textSize="14sp"/>
 
     </LinearLayout>
