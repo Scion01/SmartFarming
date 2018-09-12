@@ -292,6 +292,12 @@ public class SignupActivity extends AppCompatActivity implements AdapterView.OnI
             databaseReference4 = databaseReference4.child("masterControl");
             databaseReference4.child(phone).child("value").setValue(1);
 
+            DatabaseReference databaseReference5 = FirebaseDatabase.getInstance().getReference();
+            databaseReference5 = databaseReference5.child("Subscriptions");
+            databaseReference5 = databaseReference5.child(phone);
+            SubscriptionInit subscriptionInit = new SubscriptionInit(0,"0","0","0","0");
+            databaseReference5.setValue(subscriptionInit);
+
 
             new android.os.Handler().postDelayed(
                     new Runnable() {

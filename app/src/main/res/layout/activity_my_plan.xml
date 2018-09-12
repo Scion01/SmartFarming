@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
-                android:text="Rs: 500"
+                android:text="Rs: 1500"
                 android:textColor="#454444"
                 android:layout_marginTop="5dp"/>
         </LinearLayout>
@@ -112,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="4 months (120 days) of consulting for grapes related queries only, without any limits on number of queries!"
+                android:text="6 months (180 days) of consulting for grapes related queries only, without any limits on number of queries!"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"/>
 
@@ -122,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
-                android:text="Rs: 1000"
+                android:text="Rs: 2000"
                 android:textColor="#454444"
                 android:layout_marginTop="5dp"/>
         </LinearLayout>
@@ -164,7 +164,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="3 months (90 days) of consulting for tomato related queries only, without any limits on number of queries!"
+                android:text="4 months (120 days) of consulting for tomato related queries only, without any limits on number of queries!"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"/>
 
@@ -174,7 +174,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
-                android:text="Rs: 500"
+                android:text="Rs: 1000"
                 android:textColor="#454444"
                 android:layout_marginTop="5dp"/>
         </LinearLayout>
@@ -203,7 +203,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
                     android:textSize="25sp"
-                    android:text="Chili Plan"
+                    android:text="Chilli Plan"
                     android:layout_marginLeft="10dp" />
                 <CheckBox
                     android:layout_width="wrap_content"
@@ -216,7 +216,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="3 months (90 days) of consulting for chili related queries only, without any limits on number of queries!"
+                android:text="6 months (180 days) of consulting for chilli related queries only, without any limits on number of queries!"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"/>
 
@@ -226,7 +226,215 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
-                android:text="Rs: 400"
+                android:text="Rs: 700"
+                android:textColor="#454444"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ff0000">
+
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/OkraPlan"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:text="Okra Plan"
+                    android:layout_marginLeft="10dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OkraCheck"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="4 months (120 days) of consulting for Okra related queries only, without any limits on number of queries!"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="Rs: 1000"
+                android:textColor="#454444"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ff0000">
+
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MangoPlan"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:text="Mango Plan"
+                    android:layout_marginLeft="10dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mangoCheck"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="4 months (120 days) of consulting for Mango related queries only, without any limits on number of queries!"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="Rs: 1000"
+                android:textColor="#454444"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ff0000">
+
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/papayaPlan"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:text="Papaya Plan"
+                    android:layout_marginLeft="10dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/papayaCheck"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="12 months (360 days) of consulting for Papaya related queries only, without any limits on number of queries!"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="Rs: 2000"
+                android:textColor="#454444"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ff0000">
+
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottlePlan"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:text="Bottle gourd Plan"
+                    android:layout_marginLeft="10dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bottleCheck"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="4 months (120 days) of consulting for Bottle gourd related queries only, without any limits on number of queries!"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="Rs: 700"
                 android:textColor="#454444"
                 android:layout_marginTop="5dp"/>
         </LinearLayout>
@@ -268,7 +476,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="4 months (120 days) of consulting for brinjal related queries only, without any limits on number of queries!"
+                android:text="7 months (210 days) of consulting for brinjal related queries only, without any limits on number of queries!"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="5dp"/>
 
@@ -278,7 +486,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
-                android:text="Rs: 500"
+                android:text="Rs: 1000"
                 android:textColor="#454444"
                 android:layout_marginTop="5dp"/>
         </LinearLayout>
@@ -340,7 +548,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/highlight_button2"
         android:layout_gravity="center"
-        android:text="Proceed To payment"
+        android:text="Select a Plan"
         android:textColor="#e24646"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"

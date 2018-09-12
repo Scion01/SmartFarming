@@ -1,7 +1,9 @@
 package com.example.hauntarl.smartfarming;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
@@ -19,7 +21,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import cn.pedant.SweetAlert.SweetAlertDialog;
+import instamojo.library.InstamojoPay;
+import instamojo.library.InstapayListener;
 
 public class DashActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -40,10 +47,51 @@ public class DashActivity extends AppCompatActivity implements AdapterView.OnIte
                     R.drawable.about_us
 
             };
+    
+    private void callInstamojoPay(String email, String phone, String amount, String purpose, String buyername) {
+        final Activity activity = this;
+        InstamojoPay instamojoPay = new InstamojoPay();
+        IntentFilter filter = new IntentFilter("ai.devsupport.instamojo");
+        registerReceiver(instamojoPay, filter);
+        JSONObject pay = new JSONObject();
+        try {
+            pay.put("email", email);
+            pay.put("phone", phone);
+            pay.put("purpose", purpose);
+            pay.put("amount", amount);
+            pay.put("name", buyername);
+       pay.put("send_sms", true);
+      pay.put("send_email", true);
+ } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        initListener();
+        instamojoPay.start(activity, pay, listener);
+    }
+    
+    InstapayListener listener;
+
+    
+    private void initListener() {
+        listener = new InstapayListener() {
+            @Override
+            public void onSuccess(String response) {
+                Toast.makeText(getApplicationContext(), response, Toast.LENGTH_LONG)
+                        .show();
+            }
+
+            @Override
+            public void onFailure(int code, String reason) {
+                Toast.makeText(getApplicationContext(), "Failed: " + reason, Toast.LENGTH_LONG)
+                        .show();
+            }
+        };
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash);
+        // Call the function callInstamojo to start payment here
 
         if(checkConnection() ==1){
 
@@ -75,6 +123,29 @@ public class DashActivity extends AppCompatActivity implements AdapterView.OnIte
                 else{
                     Toast.makeText(getApplicationContext(),"Master Control test passed ",Toast.LENGTH_SHORT).show();
                     pDialog.cancel();
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        DatabaseReference databaseReference1 = FirebaseDatabase.getInstance().getReference();
+        databaseReference1 = databaseReference1.child("Subscriptions");
+        databaseReference1 = databaseReference1.child(phone);
+        databaseReference1.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.getKey().toString().equals("isActive")){
+                    if(dataSnapshot.getValue().toString().equals(0)){
+                        startActivity(new Intent(getApplicationContext(),MyPlan.class));
+                        overridePendingTransition(R.anim.entry_from_left,R.anim.exit_from_left);
+                    }
+                    else{
+                        Toast.makeText(getApplicationContext(),"Subscription Active!!",Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
 
